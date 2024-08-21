@@ -10,6 +10,7 @@ import { FaPlus } from "react-icons/fa"
 import AddEditNoteDialog from './components/AddEditNoteDialog';
 import SignUpModal from './components/SignUpModal';
 import LoginModal from './components/LoginModal';
+import NavBar from './components/NavBar';
 
 
 function App() {
@@ -64,6 +65,14 @@ function App() {
   </Row>
 
   return (
+
+    <div>
+      <NavBar 
+        loggedInUser={null}
+        onLoginClicked={() => {}}
+        onSignUpClicked={() => {}}
+        onLogoutSuccessful={() => {}}
+      />
     <Container className={styles.notesPage}>
       <Button 
       className={`mb-4 ${styleUtils.blockCenter} ${styleUtils.flexCenter}`}
@@ -114,6 +123,7 @@ function App() {
       />
       }
     </Container>
+    </div>
   );
 }
 
