@@ -50,6 +50,7 @@ const LoginModal = ({onDismiss, onLoginSuccessful}: LoginModalProps) => {
                 name="password"
                 label="Password"
                 text="password"
+                type="password"
                 placeholder="Password"
                 register={register}
                 registerOptions={{required: "Required"}}
