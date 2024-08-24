@@ -1,6 +1,10 @@
-const NotesPageLoggedOutView = () => {
+import React from "react";
+import { useTranslation } from "react-i18next";
+
+const NotesPageLoggedOutView: React.FC = () => {
+    const { t } = useTranslation();
     return ( 
-        <p>Please log in to see your notes</p>
+        <p>{t('notesPageLoggedOutView_message')}</p>
      );
 }
  
