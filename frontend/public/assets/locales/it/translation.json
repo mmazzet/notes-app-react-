@@ -1,3 +1,49 @@
 {
-    "notesPageLoggedOutView_message": "Fai login per accedere alle tue note."
+    "notesPageLoggedOutView_message": "Accedi per vedere le tue note.",
+    "addEditNoteDialog_save_button": "Salva",
+    "addEditNoteDialog_form_title_edit": "Modifica nota",
+    "addEditNoteDialog_form_title_add": "Aggiungi nota",
+    "addEditNoteDialog_form_label_title": "Titolo",
+    "addEditNoteDialog_form_placeholder_title": "Titolo",
+    "addEditNoteDialog_form_error_title": "Obbligatorio",
+    "addEditNoteDialog_form_label_text": "Testo",
+    "addEditNoteDialog_form_placeholder_text": "Testo",
+
+    "logInModal_navbar_login": "Login",
+    "logInModal_label_username": "Nome utente",
+
+    "logInModal_form_header_title":"Accedi",
+    "logInModal_form_label_username":"Nome utente",
+    "logInModal_form_placeholder_username":"Nome utente",
+    "logInModal_form_error_username":"Obbligatorio",
+    "logInModal_form_label_password":"Password",
+    "logInModal_form_placeholder_password":"Password",
+    "logInModal_form_error_password":"Obbligatorio",
+    "logInModal_form_login_button":"Accedi",
+
+    "navbar_link_privacy": "Privacy",
+    "navBarLoggedInView_navbar_text": "Utente registrato:",
+    "navBarLoggedInView_navbar_button_logout": "Esci",
+
+    "navBarLoggedOutView_button_signup": "Registrati",
+    "navBarLoggedOutView_button_login": "Accedi",
+
+    "note_updatedat": "Aggiornata: ",
+    "note_createdat": "Creata: ",
+
+    "signUpModal_form_header_title": "Registrati",
+    "signUpModal_form_label_username": "Nome utente",
+    "signUpModal_form_placeholder_username": "Nome utente",
+    "signUpModal_form_error_username": "Obbligatorio",
+    "signUpModal_form_label_email": "Email",
+    "signUpModal_form_placeholder_email": "Email",
+    "signUpModal_form_error_email": "Obbligatorio",
+    "signUpModal_form_label_password": "Password",
+    "signUpModal_form_placeholder_password": "Password",
+    "signUpModal_form_error_password": "Obbligatorio",
+    "signUpModal_form_signup_button": "Registrati",
+
+    "notFoundPage":"Questa pagina non esiste!",
+
+    "privacyPage":"Ci teniamo davvero alla tua privacy!"
 }

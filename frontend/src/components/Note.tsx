@@ -4,6 +4,8 @@ import { Note as NoteModel } from "../models/note";
 import { Card } from "react-bootstrap";
 import { formatDate } from "../utils/formatDate";
 import {MdDelete} from "react-icons/md";
+import { useTranslation } from "react-i18next";
+
 
 interface NoteProps {
     note: NoteModel,
@@ -12,6 +14,7 @@ interface NoteProps {
     className?: string,
 }
 const Note = ({ note, onNoteClicked, onDeleteNoteClicked, className }: NoteProps) => {
+    const { t } = useTranslation();
     const {
         title,
         text,
@@ -21,9 +24,9 @@ const Note = ({ note, onNoteClicked, onDeleteNoteClicked, className }: NoteProps
 
     let createdUpdatedText: string;
     if (updatedAt > createdAt) {
-        createdUpdatedText = "Updated: " + formatDate(updatedAt);
+        createdUpdatedText = t("note_updatedat") + formatDate(updatedAt);
     } else {
-        createdUpdatedText = "Created: " + formatDate(createdAt);
+        createdUpdatedText = t("note_createdat") + formatDate(createdAt);
     }
 
     return (

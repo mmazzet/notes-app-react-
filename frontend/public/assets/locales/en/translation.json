@@ -1,3 +1,49 @@
 {
-    "notesPageLoggedOutView_message": "Please log in to see your notes"
+    "notesPageLoggedOutView_message": "Please log in to see your notes",
+    "addEditNoteDialog_save_button": "Save",
+    "addEditNoteDialog_form_title_edit": "Edit note",
+    "addEditNoteDialog_form_title_add": "Add note",
+    "addEditNoteDialog_form_label_title": "Title",
+    "addEditNoteDialog_form_placeholder_title": "Title",
+    "addEditNoteDialog_form_error_title": "Required",
+    "addEditNoteDialog_form_label_text": "Text",
+    "addEditNoteDialog_form_placeholder_text": "Text",
+
+    "logInModal_navbar_login": "Log In",
+    "logInModal_label_username": "Username",
+
+    "logInModal_form_header_title": "Log In",
+    "logInModal_form_label_username": "Username",
+    "logInModal_form_placeholder_username": "Username",
+    "logInModal_form_error_username": "Required",
+    "logInModal_form_label_password": "Password",
+    "logInModal_form_placeholder_password": "Password",
+    "logInModal_form_error_password": "Required",
+    "logInModal_form_login_button": "Log In",
+
+    "navbar_link_privacy": "Privacy",
+    "navBarLoggedInView_navbar_text": "Signed in as:",
+    "navBarLoggedInView_navbar_button_logout": "Log out",
+
+    "navBarLoggedOutView_button_signup": "Sign Up",
+    "navBarLoggedOutView_button_login": "Log in",
+
+    "note_updatedat": "Updated: ",
+    "note_createdat": "Created: ",
+
+    "signUpModal_form_header_title": "Sign Up",
+    "signUpModal_form_label_username": "Username",
+    "signUpModal_form_placeholder_username": "Username",
+    "signUpModal_form_error_username": "Required",
+    "signUpModal_form_label_email": "Email",
+    "signUpModal_form_placeholder_email": "Email",
+    "signUpModal_form_error_email": "Required",
+    "signUpModal_form_label_password": "Password",
+    "signUpModal_form_placeholder_password": "Password",
+    "signUpModal_form_error_password": "Required",
+    "signUpModal_form_signup_button": "Sign Up",
+
+    "notFoundPage":"Page not found!",
+    "privacyPage":"We care about your privacy. Promise!"
+
 }

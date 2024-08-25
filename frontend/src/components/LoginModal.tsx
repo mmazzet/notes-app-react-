@@ -7,6 +7,7 @@ import TextInputField from "./form/TextInputField";
 import styleUtils from "../styles/utils.module.css";
 import { UnauthorizedError } from "../errors/http_errors";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 interface LoginModalProps {
     onDismiss: () => void,
@@ -14,6 +15,7 @@ interface LoginModalProps {
 }
 
 const LoginModal = ({onDismiss, onLoginSuccessful}: LoginModalProps) => {
+    const { t } = useTranslation();
 
     const [errorText, setErrorText] = useState<string | null>(null);
 
@@ -37,7 +39,7 @@ const LoginModal = ({onDismiss, onLoginSuccessful}: LoginModalProps) => {
         <Modal show onHide={onDismiss}>
         <Modal.Header closeButton>
             <Modal.Title>
-                Log In
+                {t("logInModal_form_header_title")}
             </Modal.Title>
         </Modal.Header>
 
@@ -51,21 +53,21 @@ const LoginModal = ({onDismiss, onLoginSuccessful}: LoginModalProps) => {
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <TextInputField 
                 name="username"
-                label="Username"
+                label={t("logInModal_form_label_username")}
                 text="text"
-                placeholder="Username"
+                placeholder={t("logInModal_form_placeholder_username")}
                 register={register}
-                registerOptions={{required: "Required"}}
+                registerOptions={{required: t("logInModal_form_error_username")}}
                 error={errors.username}
                 />
                 <TextInputField 
                 name="password"
-                label="Password"
+                label={t("logInModal_form_label_password")}
                 text="password"
                 type="password"
-                placeholder="Password"
+                placeholder={t("logInModal_form_placeholder_password")}
                 register={register}
-                registerOptions={{required: "Required"}}
+                registerOptions={{required: t("logInModal_form_error_password")}}
                 error={errors.password}
                 />
                 <Button
@@ -73,7 +75,7 @@ const LoginModal = ({onDismiss, onLoginSuccessful}: LoginModalProps) => {
                 disabled={isSubmitting}
                 className={styleUtils.width100}
                 >
-                    Log In
+                    {t("logInModal_form_login_button")}
                 </Button>
             </Form>
         </Modal.Body>

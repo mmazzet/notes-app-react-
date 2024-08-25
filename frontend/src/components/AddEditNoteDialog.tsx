@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import * as NotesApi from "../network/notes_api";
 import { Note } from "../models/note";
 import TextInputField from "./form/TextInputField";
+import { useTranslation } from "react-i18next";
 
 interface AddEditNoteDialogProps {
     noteToEdit?: Note,
@@ -12,6 +13,8 @@ interface AddEditNoteDialogProps {
 }
 
 const AddEditNoteDialog = ({ noteToEdit, onDismiss, onNoteSaved }: AddEditNoteDialogProps) => {
+
+    const { t } = useTranslation();
 
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<NoteInput>({
         defaultValues: {
@@ -38,7 +41,7 @@ const AddEditNoteDialog = ({ noteToEdit, onDismiss, onNoteSaved }: AddEditNoteDi
         <Modal show onHide={onDismiss}>
             <Modal.Header closeButton>
                 <Modal.Title>
-                    {noteToEdit ? "Edit note" : "Add Note"}
+                    {noteToEdit ? t('addEditNoteDialog_form_title_edit') : t("addEditNoteDialog_form_title_add")}
                 </Modal.Title>
             </Modal.Header>
 
@@ -46,19 +49,19 @@ const AddEditNoteDialog = ({ noteToEdit, onDismiss, onNoteSaved }: AddEditNoteDi
                 <Form id="addEditNoteForm" onSubmit={handleSubmit(onSubmit)}>
                     <TextInputField
                         name="title"
-                        label="Title"
+                        label={t("addEditNoteDialog_form_label_title")}
                         type="text"
-                        placeholder="Title"
+                        placeholder={t("addEditNoteDialog_form_placeholder_title")}
                         register={register}
-                        registerOptions={{ required: "Required" }}
+                        registerOptions={{ required: t("addEditNoteDialog_form_error_title") }}
                         error={errors.title}
                     />
                     <TextInputField
                         name="text"
-                        label="Text"
+                        label={t("addEditNoteDialog_form_label_text")}
                         as="textarea"
                         rows={5}
-                        placeholder="Text"
+                        placeholder={t("addEditNoteDialog_form_placeholder_text")}
                         register={register}
                     />
 
@@ -71,7 +74,7 @@ const AddEditNoteDialog = ({ noteToEdit, onDismiss, onNoteSaved }: AddEditNoteDi
                     form="addEditNoteForm"
                     disabled={isSubmitting}
                 >
-                    Save
+                    {t('addEditNoteDialog_save_button')}
                 </Button>
             </Modal.Footer>
         </Modal>

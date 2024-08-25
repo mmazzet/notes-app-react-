@@ -1,16 +1,15 @@
 import { Button, Navbar } from "react-bootstrap";
 import { User } from "../models/user";
 import * as NotesApi from "../network/notes_api";
-
-
-
+import { useTranslation } from "react-i18next";
 
 interface NavBarLoggedInViewProps {
     user: User,
     onLogoutSuccessful: () => void,
 }
 
-const NavBarLoggedInView = ({user, onLogoutSuccessful}: NavBarLoggedInViewProps) => {
+const NavBarLoggedInView = ({ user, onLogoutSuccessful }: NavBarLoggedInViewProps) => {
+    const { t } = useTranslation();
 
     async function logout() {
         try {
@@ -19,18 +18,18 @@ const NavBarLoggedInView = ({user, onLogoutSuccessful}: NavBarLoggedInViewProps)
         } catch (error) {
             console.error(error);
             alert(error);
-            
+
         }
     }
 
-    return (  
+    return (
         <>
-        <Navbar.Text className="me-2">
-            Signed in as: {user.username}
-        </Navbar.Text>
-        <Button onClick={logout}>Log out</Button>
+            <Navbar.Text className="me-2">
+                {t("navBarLoggedInView_navbar_text")} {user.username}
+            </Navbar.Text>
+            <Button onClick={logout}>{t("navBarLoggedInView_navbar_button_logout")}</Button>
         </>
     );
 }
- 
+
 export default NavBarLoggedInView;

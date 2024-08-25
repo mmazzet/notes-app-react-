@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
+
 const PrivacyPage = () => {
+    const { t } = useTranslation();
     return ( 
         <div>
-            <p>We care about your privacy. Promise!</p>
+            <p>{t("privacyPage")}</p>
         </div>
      );
 }

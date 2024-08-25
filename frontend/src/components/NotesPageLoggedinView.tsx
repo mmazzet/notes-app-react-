@@ -7,10 +7,12 @@ import styles from "../styles/NotesPage.module.css";
 import styleUtils from "../styles/utils.module.css";
 import AddEditNoteDialog from "./AddEditNoteDialog";
 import Note from "./Note";
+import { useTranslation } from "react-i18next";
 
 
 
 const NotesPageLoggedinView = () => {
+    const { t } = useTranslation();
 
     const [notes, setNotes] = useState<NoteModel[]>([]);
     const [notesLoading, setNotesLoading] = useState(true);
