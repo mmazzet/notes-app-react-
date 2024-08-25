@@ -45,5 +45,11 @@
 
     "notFoundPage":"Questa pagina non esiste!",
 
-    "privacyPage":"Ci teniamo davvero alla tua privacy!"
+    "privacyPage":"Ci teniamo davvero alla tua privacy! Promesso!",
+
+    "notesPageLoggedinView_showNotesLoadingError_refresh": "Qualcosa è andato storto. Aggiorna questa pagina.",
+    "notesPageLoggedinView_no_notes": "Non hai ancora nessuna nota",
+    "notesPageLoggedinView_button_new_note": "Aggiungi una nota"
+
+
 }

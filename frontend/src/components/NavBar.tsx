@@ -4,6 +4,9 @@ import NavBarLoggedInView from "./NavBarLoggedInView";
 import NavBarLoggedOutView from "./NavBarLoggedOutView";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+import GlobeIcon from "./GlobeIcon";
+
 
 
 
@@ -13,6 +16,21 @@ interface NavBarProps {
     onLoginClicked: () => void,
     onLogoutSuccessful: () => void,
 }
+
+const languages = [
+    {
+        code: "en",
+        name: "English",
+        country_code: "ie"
+    },
+
+    {
+        code: "it",
+        name: "Italiano",
+        country_code: "it"
+    },
+
+]
 
 const NavBar = ({ loggedInUser, onSignUpClicked, onLoginClicked, onLogoutSuccessful }: NavBarProps) => {
     const { t } = useTranslation();
@@ -34,6 +52,23 @@ const NavBar = ({ loggedInUser, onSignUpClicked, onLoginClicked, onLogoutSuccess
                             ? <NavBarLoggedInView user={loggedInUser} onLogoutSuccessful={onLogoutSuccessful} />
                             : <NavBarLoggedOutView onLoginClicked={onLoginClicked} onSignUpClicked={onSignUpClicked} />
                         }
+                    </Nav>
+                    <Nav className="d-flex justify-content-end">
+                        <div className="dropdown">
+                            <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <GlobeIcon />
+                            </button>
+                            <ul className="dropdown-menu">
+                                {languages.map(({ code, name, country_code }) => (
+                                    <li key={country_code}>
+                                        <button className="dropdown-item" onClick={() => i18next.changeLanguage(code)} >
+                                            <span className={`fi fi-${country_code} mx-2`}></span>
+                                            {name}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

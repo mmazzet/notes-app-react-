@@ -70,15 +70,15 @@ const NotesPageLoggedinView = () => {
                 className={`mb-4 ${styleUtils.blockCenter} ${styleUtils.flexCenter}`}
                 onClick={() => setShowAddNoteDialog(true)}>
                 <FaPlus />
-                Add new note
+                {t("notesPageLoggedinView_button_new_note")}
             </Button>
             {notesLoading && <Spinner animation="border" variant="primary" />}
-            {showNotesLoadingError && <p>Something went wrong. Please refresh the page</p>}
+            {showNotesLoadingError && <p>{t("notesPageLoggedinView_showNotesLoadingError_refresh")}</p>}
             {!notesLoading && !showNotesLoadingError &&
                 <>
                     {notes.length > 0
                         ? notesGrid
-                        : <p>You don't have any notes yet</p>
+                        : <p>{t("notesPageLoggedinView_no_notes")}</p>
 
                     }
                 </>

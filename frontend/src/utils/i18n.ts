@@ -3,6 +3,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
+import React, { Suspense } from "react";
 
 
 
@@ -11,6 +12,7 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
+    supportedLngs:["en", "it"],
     fallbackLng: "en",
     detection: {
         order: ['cookie','htmlTag', 'localStorage', 'path', 'subdomain'],
@@ -19,7 +21,6 @@ i18n
     backend: {
         loadPath: '/assets/locales/{{lng}}/translation.json'
     },
-    react: {useSuspense: false},
   });
 
 export default i18n;

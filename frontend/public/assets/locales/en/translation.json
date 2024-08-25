@@ -44,6 +44,10 @@
     "signUpModal_form_signup_button": "Sign Up",
 
     "notFoundPage":"Page not found!",
-    "privacyPage":"We care about your privacy. Promise!"
+    "privacyPage":"We care about your privacy. Promise!",
+
+    "notesPageLoggedinView_showNotesLoadingError_refresh": "Something went wrong. Please refresh the page",
+    "notesPageLoggedinView_no_notes": "You don't have any notes yet",
+    "notesPageLoggedinView_button_new_note": "Add new note"
 
 }
