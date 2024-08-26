@@ -49,7 +49,8 @@
 
     "notesPageLoggedinView_showNotesLoadingError_refresh": "Qualcosa è andato storto. Aggiorna questa pagina.",
     "notesPageLoggedinView_no_notes": "Non hai ancora nessuna nota",
-    "notesPageLoggedinView_button_new_note": "Aggiungi una nota"
+    "notesPageLoggedinView_button_new_note": "Aggiungi una nota",
+    "language":"Lingua"
 
 
 }

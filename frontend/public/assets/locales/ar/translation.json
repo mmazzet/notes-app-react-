@@ -1,0 +1,54 @@
+{
+    "notesPageLoggedOutView_message": "الرجاء تسجيل الدخول لرؤية الملاحظات الخاصة بك",
+    "addEditNoteDialog_save_button": "يحفظ",
+    "addEditNoteDialog_form_title_edit": "تحرير الملاحظة",
+    "addEditNoteDialog_form_title_add": "أضف ملاحظة",
+    "addEditNoteDialog_form_label_title": "عنوان",
+    "addEditNoteDialog_form_placeholder_title": "عنوان",
+    "addEditNoteDialog_form_error_title": "مطلوب",
+    "addEditNoteDialog_form_label_text": "نص",
+    "addEditNoteDialog_form_placeholder_text": "نص",
+
+    "logInModal_navbar_login": "تسجيل الدخول",
+    "logInModal_label_username": "اسم المستخدم",
+
+    "logInModal_form_header_title": "تسجيل الدخول",
+    "logInModal_form_label_username": "اسم المستخدم",
+    "logInModal_form_placeholder_username": "اسم المستخدم",
+    "logInModal_form_error_username": "مطلوب",
+    "logInModal_form_label_password": "كلمة المرور",
+    "logInModal_form_placeholder_password": "كلمة المرور",
+    "logInModal_form_error_password": "مطلوب",
+    "logInModal_form_login_button": "تسجيل الدخول",
+
+    "navbar_link_privacy": "خصوصية",
+    "navBarLoggedInView_navbar_text": "تم تسجيل الدخول كـ:",
+    "navBarLoggedInView_navbar_button_logout": "تسجيل الخروج",
+
+    "navBarLoggedOutView_button_signup": "اشتراك",
+    "navBarLoggedOutView_button_login": "تسجيل الدخول",
+
+    "note_updatedat": "تم التحديث: ",
+    "note_createdat": "مخلوق: ",
+
+    "signUpModal_form_header_title": "اشتراك",
+    "signUpModal_form_label_username": "اسم المستخدم",
+    "signUpModal_form_placeholder_username": "Uاسم المستخدم",
+    "signUpModal_form_error_username": "مطلوب",
+    "signUpModal_form_label_email": "بريد إلكتروني",
+    "signUpModal_form_placeholder_email": "بريد إلكتروني",
+    "signUpModal_form_error_email": "مطلوب",
+    "signUpModal_form_label_password": "كلمة المرور",
+    "signUpModal_form_placeholder_password": "كلمة المرور",
+    "signUpModal_form_error_password": "مطلوب",
+    "signUpModal_form_signup_button": "اشتراك",
+
+    "notFoundPage":"لم يتم العثور على الصفحة!",
+    "privacyPage":"نحن نهتم بخصوصيتك. يعد!",
+
+    "notesPageLoggedinView_showNotesLoadingError_refresh": "حدث خطأ ما. يرجى تحديث الصفحة",
+    "notesPageLoggedinView_no_notes": "ليس لديك أي ملاحظات حتى الآن",
+    "notesPageLoggedinView_button_new_note": "أضف ملاحظة جديدة",
+    "language":"لغة"
+
+}

@@ -48,6 +48,7 @@
 
     "notesPageLoggedinView_showNotesLoadingError_refresh": "Something went wrong. Please refresh the page",
     "notesPageLoggedinView_no_notes": "You don't have any notes yet",
-    "notesPageLoggedinView_button_new_note": "Add new note"
+    "notesPageLoggedinView_button_new_note": "Add new note",
+    "language":"Language"
 
 }
